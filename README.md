@@ -53,7 +53,7 @@ $Z = \frac{A_{potential}}{A_{current}}$
 
 The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of $\frac{180}{\pi}$. 
 
-$\phi_{difference} = |(\phi_{potential} - \phi_{current}) ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%7D%7Bb%7D|$)
+$\phi_{difference} = |(\phi_{potential} - \phi_{current})|$ ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%7D%7Bb%7D)
 
 $(figure_2) -> Bode plot
 

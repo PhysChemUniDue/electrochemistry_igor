@@ -53,7 +53,7 @@ This kind of fit is repeated for each frequency value. With these fit parameters
 
 The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of <!-- $\frac{180}{\pi}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cfrac%7B180%7D%7B%5Cpi%7D">. 
 
-$\phi_{difference} = \left|\left(\phi_{potential} - \phi_{current} \right) \frac{180}{\pi} \right|$
+<!-- $\phi_{difference} = \left|\left(\phi_{potential} - \phi_{current} \right) \frac{180}{\pi} \right|$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=%5Cphi_%7Bdifference%7D%20%3D%20%5Cleft%7C%5Cleft(%5Cphi_%7Bpotential%7D%20-%20%5Cphi_%7Bcurrent%7D%20%5Cright)%20%5Cfrac%7B180%7D%7B%5Cpi%7D%20%5Cright%7C">
 
 $(figure_2) -> Bode plot
 

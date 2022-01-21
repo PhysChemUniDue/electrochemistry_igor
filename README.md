@@ -49,18 +49,18 @@ The raw data at frequency f = () Hz are shown in $(figure_1). The potential wave
 *A* is the amplitude, *&omega;* the angular frequency, *t* the recorded time, *&phi;* the phase and *y<sub>0</sub>* the intercept.
 This kind of fit is repeated for each frequency value. With these fit parameters it is possible to calculate the absolute value of the impedance *Z* and the phase *&phi;* to generate the previously mentioned Bode plot. The absolute value of the impedance is defined as the ration of the potential and current waves' amplitude.
 
-$Z = \frac{A_{potential}}{A_{current}}$
+![](https://latex.codecogs.com/svg.latex?Z%20%3D%20%5Cfrac%7BA_%7Bpotential%7D%7D%7BA_%7Bcurrent%7D%7D)
 
 The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of $\frac{180}{\pi}$. 
 
-$\phi_{difference} = |(\phi_{potential} - \phi_{current})|$ ![](https://latex.codecogs.com/gif.latex?%5Cfrac%7Ba%7D%7Bb%7D)
+![](https://latex.codecogs.com/svg.latex?%5Cphi_%7Bdifference%7D%20%3D%20%5Cleft%7C%28%5Cphi_%7Bpotential%7D%20-%20%5Cphi_%7Bcurrent%7D%29%20%5Cfrac%7B180%7D%7B%5Cpi%7D%5Cright%7C)
 
 $(figure_2) -> Bode plot
 
 To generate a Nyquist plot, we need to determine the real and imaginary part of the impedance. These values are calculated by the following equations:
 
-$Z_{real} = |Z \cos(\frac{\pi}{180} \phi_{difference})|$
+![](https://latex.codecogs.com/svg.latex?Z_%7Breal%7D%20%3D%20%5Cleft%7CZ%20%5Ccos%20%5Cleft%28%5Cfrac%7B%5Cpi%7D%7B180%7D%20%5Cphi_%7Bdifference%7D%5Cright%29%5Cright%7C)
 
-$Z_{imag} = |Z \sin(\frac{\pi}{180} \phi_{difference})|$
+![](https://latex.codecogs.com/svg.latex?Z_%7Bimag%7D%20%3D%20%5Cleft%7CZ%20%5Csin%20%5Cleft%28%5Cfrac%7B%5Cpi%7D%7B180%7D%20%5Cphi_%7Bdifference%7D%20%5Cright%29%20%5Cright%7C)
 
 $(figure_3) -> Nyquist plot

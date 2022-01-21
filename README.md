@@ -4,14 +4,14 @@
 # Introduction
 
 This Github repository describes an in-depth tutorial on how to conduct an impedance experiment to generate a Bode (or Nyquist) plot. 
-In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, Z<sub>im<sub>, and the abscissa is the real axis, Z<sub>Re<sub>.
+In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, Z<sub>im, and the abscissa is the real axis, Z<sub>Re.
 The first section deals with the experimental setup while the second one will be a step-by-step explanation on how to analyse the raw data to generate a Bode (or Nyquist) plot.
 
 # Methods
 
 	## Experimental setup
 
-The electrochemical cell consistes of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>4<sub> solution. 
+The electrochemical cell consistes of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>4 solution. 
 
 	## Equipement
 
@@ -24,25 +24,25 @@ Electrochemical impedance spectroscopy measures the frequency response of a part
 
 The raw data at frequency f = $() Hz are shown in $(figure_1). The potential wave is shown in blue and the current wave in red. These data are fitted with the following equation:
 
-f(x) = A * sin(&omega; * t + &phi;) + y<sub>0<sub>
+f(x) = A * sin(&omega; * t + &phi;) + y<sub>0
 
-A is the amplitude, &omega; the angular frequency, t the recorded time, &phi; the phase and y<sub>0<sub> the intercept.
+A is the amplitude, &omega; the angular frequency, t the recorded time, &phi; the phase and y<sub>0 the intercept.
 This kind of fit is repeated for each frequency value. With these fit parameters it is possible to calculate the absolute value of the impedance Z and the phase &phi; to generate the previously mentioned Bode plot. The absolute value of the impedance is defined as the ration of the potential and current wave amplitude.
 
-Z<sub>absolut<sub> = U<sub>0<sub> / I<sub>0<sub>
+Z<sub>absolut = U<sub>0 / I<sub>0
 
-The phase difference is calculated by subtracting the phase of the current phase<sub>current<sub> from the phase of the potential phase<sub>potential<sub>.
+The phase difference is calculated by subtracting the phase of the current phase<sub>current from the phase of the potential phase<sub>potential.
 
-phase<sub>potential<sub> = (&phi;) <sub>potential<sub> / &pi; * 180
-phase<sub>current<sub> = (&phi;) <sub>current<sub>  / &pi; * 180
+phase<sub>potential = (&phi;) <sub>potential / &pi; * 180
+phase<sub>current = (&phi;) <sub>current  / &pi; * 180
 
-phase<sub>difference<sub> = abs(phase<sub>potential<sub> - phase<sub>current<sub>)
+phase<sub>difference = abs(phase<sub>potential - phase<sub>current)
 
 $(figure_2) -> Bode plot
 
 To generate a Nyquist plot, we need to determine the real and imaginary part of the impedance. These values are calculated by the following equations:
 
-Z<sub>real<sub> = abs(Z<sub>absolut<sub> * cos(phase<sub>difference<sub> / 180 * &pi;) )
-Z<sub>imag<sub> = abs(iZ<sub>absolut<sub> * sin(phase<sub>difference<sub> / 180 * &pi;) )
+Z<sub>real = abs(Z<sub>absolut * cos(phase<sub>difference / 180 * &pi;) )
+Z<sub>imag = abs(iZ<sub>absolut * sin(phase<sub>difference / 180 * &pi;) )
 
 $(figure_3) -> Nyquist plot

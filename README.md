@@ -49,7 +49,7 @@ The raw data at frequency f = () Hz are shown in $(figure_1). The potential wave
 *A* is the amplitude, *&omega;* the angular frequency, *t* the recorded time, *&phi;* the phase and *y<sub>0</sub>* the intercept.
 This kind of fit is repeated for each frequency value. With these fit parameters it is possible to calculate the absolute value of the impedance *Z* and the phase *&phi;* to generate the previously mentioned Bode plot. The absolute value of the impedance is defined as the ration of the potential and current waves' amplitude.
 
-<!-- $Z = \frac{A_{potential}}{A_{current}}$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=Z%20%3D%20%5Cfrac%7BA_%7Bpotential%7D%7D%7BA_%7Bcurrent%7D%7D">
+<!-- $Z = \frac{A_{potential}}{A_{current}}$ --> <img style="transform: translateY(0.1em); background: black;" src="https://render.githubusercontent.com/render/math?math=Z%20%3D%20%5Cfrac%7BA_%7Bpotential%7D%7D%7BA_%7Bcurrent%7D%7D">
 ![](https://latex.codecogs.com/svg.latex?Z%20%3D%20%5Cfrac%7BA_%7Bpotential%7D%7D%7BA_%7Bcurrent%7D%7D)
 
 The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of ![](![image](https://user-images.githubusercontent.com/71015145/150536852-41297391-904a-4d02-922c-76520e0ba31f.png)

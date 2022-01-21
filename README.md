@@ -4,7 +4,7 @@
 # Introduction
 
 This Github repository describes an in-depth tutorial on how to conduct an impedance experiment to generate a Bode (or Nyquist) plot. 
-In Bode plots, the logarithm of the magnitude of the impedance, $\log(Z)$, and the phase $\phi$ are plotted vs. the $\log$(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, $Z_{im}$, and the abscissa is the real axis, $Z_{Re}$.
+In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, *Z<sub>im</sub>, and the abscissa is the real axis, Z<sub>Re</sub>.
 The first section deals with the experimental setup while the second one will be a step-by-step explanation on how to analyse the raw data to generate a Bode (or Nyquist) plot.
 
 # Methods
@@ -18,7 +18,7 @@ Data logger: Mephistoscope
 ## Experimental setup
 
 The electrochemical cell consists of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>4</sub> solution. 
-Electrochemical impedance spectroscopy measures the frequency response of a particular system by measuring the impedance, $Z$. This is done by applying a (small) AC potential over a range of different frequencies at a specific potential. In this example the potential was stopped at 0.15 V vs. Ag/AgCl (oxidative current). The raw data contain a sine wave of the applied AC potential as well as a sine wave of the current response.
+Electrochemical impedance spectroscopy measures the frequency response of a particular system by measuring the impedance, *Z*. This is done by applying a (small) AC potential over a range of different frequencies at a specific potential. In this example the potential was stopped at 0.15 V vs. Ag/AgCl (oxidative current). The raw data contain a sine wave of the applied AC potential as well as a sine wave of the current response.
 All the parameters which have been set for each measurement (e.g. applied frequency, potential amplitude, etc.) are listed in the following table.
 
 
@@ -51,7 +51,8 @@ This kind of fit is repeated for each frequency value. With these fit parameters
 
 ![](https://latex.codecogs.com/svg.latex?Z%20%3D%20%5Cfrac%7BA_%7Bpotential%7D%7D%7BA_%7Bcurrent%7D%7D)
 
-The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of $\frac{180}{\pi}$. 
+The phase difference is calculated by subtracting the phase of the current *&phi;*<sub>current</sub> from the phase of the potential *&phi;*<sub>potential</sub>. The phase fit parameter is converted from radian to degree by the factor of ![](![image](https://user-images.githubusercontent.com/71015145/150536852-41297391-904a-4d02-922c-76520e0ba31f.png)
+). 
 
 ![](https://latex.codecogs.com/svg.latex?%5Cphi_%7Bdifference%7D%20%3D%20%5Cleft%7C%28%5Cphi_%7Bpotential%7D%20-%20%5Cphi_%7Bcurrent%7D%29%20%5Cfrac%7B180%7D%7B%5Cpi%7D%5Cright%7C)
 

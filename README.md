@@ -44,7 +44,7 @@ All the parameters which have been set for each measurement (e.g. applied freque
 
 The raw data at frequency f = () Hz are shown in $(figure_1). The potential wave is shown in blue and the current wave in red. These data are fitted with the following equation:
 
-f(x) = A  $\sin$(&omega; t + &phi;) + y<sub>0</sub>
+![](https://latex.codecogs.com/gif.latex?f%28x%29%20%3D%20A%20%5Ccdot%20%5Csin%28%5Comega%20t%20&plus;%20%5Cphi%29%20&plus;%20y_0)
 
 *A* is the amplitude, *&omega;* the angular frequency, *t* the recorded time, *&phi;* the phase and *y<sub>0</sub>* the intercept.
 This kind of fit is repeated for each frequency value. With these fit parameters it is possible to calculate the absolute value of the impedance *Z* and the phase *&phi;* to generate the previously mentioned Bode plot. The absolute value of the impedance is defined as the ration of the potential and current waves' amplitude.

@@ -19,7 +19,7 @@ Data logger: Mephistoscope
 
 The electrochemical cell consists of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>4</sub> solution. 
 Electrochemical impedance spectroscopy measures the frequency response of a particular system by measuring the impedance, *Z*. This is done by applying a (small) AC potential over a range of different frequencies at a specific potential. In this example the potential was stopped at 0.15 V vs. Ag/AgCl (oxidative current). The raw data contain a sine wave of the applied AC potential as well as a sine wave of the current response.
-All the parameters which have been set for each measurement (e.g. applied frequency, potential amplitude, etc.) are listed in the following table. The slower frequencies starting from 30 mHz and slower were not recorded with an oscilloscope, instead a data logger was used. Therefore the time in table 1 was adjusted.
+All the parameters which have been set for each measurement (e.g. applied frequency, potential amplitude, etc.) are listed in the following table. TThe lower frequencies from 30 mHz and lower were not recorded with an oscilloscope, but with a data logger. Therefore, the time in Table 1 was adjusted.
 
 ##### Table 1: Applied parameters for all impedance measurements.
 | index | frequency [Hz]| amplitude [mV]| resistance [&Omega;]| datapoints | time [s] | smoothing cap. | osc/log

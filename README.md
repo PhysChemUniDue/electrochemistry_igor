@@ -4,14 +4,14 @@
 # Introduction
 
 This Github repository describes an in-depth tutorial on how to conduct an impedance experiment to generate a Bode (or Nyquist) plot. 
-In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, Z<sub>im, and the abscissa is the real axis, Z<sub>Re.
+In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, Z<sub>(im), and the abscissa is the real axis, Z<sub>(Re).
 The first section deals with the experimental setup while the second one will be a step-by-step explanation on how to analyse the raw data to generate a Bode (or Nyquist) plot.
 
 # Methods
 
 	## Experimental setup
 
-The electrochemical cell consistes of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>4 solution. 
+The electrochemical cell consistes of a three-electrode setup. The working electrode (WE) is a platin wire (diameter $()), the counter electrode (CE) is a graphite electrode and a Ag/AgCl is used as a reference electrode. The electrolyte solution contains a 0.1 M HClO<sub>(4) solution. 
 
 	## Equipement
 

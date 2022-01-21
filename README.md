@@ -44,7 +44,7 @@ All the parameters which have been set for each measurement (e.g. applied freque
 
 The raw data at frequency f = () Hz are shown in $(figure_1). The potential wave is shown in blue and the current wave in red. These data are fitted with the following equation:
 
-$f(x) = A \cdot \sin(\omega t + \phi) + y_0$
+<!-- $f(x) = A \cdot \sin(\omega t + \phi) + y_0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg/52ru0PjanC.svg">
 
 ![](https://latex.codecogs.com/svg.latex?f%28x%29%20%3D%20A%20%5Ccdot%20%5Csin%28%5Comega%20t%20&plus;%20%5Cphi%29%20&plus;%20y_0)
 

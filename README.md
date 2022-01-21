@@ -1,10 +1,10 @@
-# electrochemistry_igor
+# Impedance spectroscopy
 
 
 # Introduction
 
 This Github repository describes an in-depth tutorial on how to conduct an impedance experiment to generate a Bode (or Nyquist) plot. 
-In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, *Z<sub>im</sub>, and the abscissa is the real axis, Z<sub>Re</sub>.
+In Bode plots, the logarithm of the magnitude of the impedance, log(Z), and the phase &phi; are plotted vs. the log(frequency), respectively. In Nyquist plots, the ordinate is the imaginary axis, *Z<sub>im</sub>*, and the abscissa is the real axis, Z<sub>Re</sub>.
 The first section deals with the experimental setup while the second one will be a step-by-step explanation on how to analyse the raw data to generate a Bode (or Nyquist) plot.
 
 # Methods

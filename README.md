@@ -79,11 +79,26 @@ Often, a system studied by impedance spectroscopy in the double layer region can
 
 
 
-R<sub>el</sub> describes the electrolyte resistance, R<sub>T</sub> the contact resistance and Z<sub>dl</sub> the capacitive resistance of the double layer.
+Z<sub>el</sub> describes the electrolyte resistance, Z<sub>T</sub> the transfer resistance, they both are simple ohmic resistors not depending on the input frequency f . Z<sub>dl</sub> is the capacitive resistance of the double layer and is dependent on the input frequency f.
+
+<!-- $$
+Z_{dl} = \frac{1}{i 2\pi f C_{dl}}
+$$ --> 
+
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=Z_%7Bdl%7D%20%3D%20%5Cfrac%7B1%7D%7Bi%202%5Cpi%20f%20C_%7Bdl%7D%7D%0D"></div>
 
 Now the resistances can be summed according to Kirchoff's law and Ohm's law. This gives the following equation for the absolute value of the impedance:
 
+<!-- $$
+|Z(f)| = \sqrt{\left ( R_{el} \frac{1}{R_T \left ( \frac{1}{R_T^2}+4\pi^2f^2 C_{dl}^2\right )}\right )^2 + \frac{4\pi^2f^2 C_{dl}^2}{ \left ( \frac{1}{R_T^2}+4\pi^2f^2 C_{dl}^2\right )^2}}
+$$ --> 
+<div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%7CZ(f)%7C%20%3D%20%5Csqrt%7B%5Cleft%20(%20R_%7Bel%7D%20%5Cfrac%7B1%7D%7BR_T%20%5Cleft%20(%20%5Cfrac%7B1%7D%7BR_T%5E2%7D%2B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%5Cright%20)%7D%5Cright%20)%5E2%20%2B%20%5Cfrac%7B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%7D%7B%20%5Cleft%20(%20%5Cfrac%7B1%7D%7BR_T%5E2%7D%2B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%5Cright%20)%5E2%7D%7D%0D"></div>
+
 The equation obtained can now be used to fit the impedance data in Figure 2. The fitting of the data is shown in Figure 5.
+
+
+##### Figure 5: Bode Plot Fit.
+
 
 To be sure that the electrode has not changed during the experiment it is advisable to record a Cyclovoltammogram before and after the impedance spectroscopy measurements.
 These can be seen in figure 6. 

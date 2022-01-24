@@ -1,7 +1,3 @@
 # Avoid including Experiment files: they can be created and edited locally to test the ipf files
-*.pxp
-*.pxt
-*.uxp
-*.uxt
 .DS_Store
 impedance Folder/Icon_

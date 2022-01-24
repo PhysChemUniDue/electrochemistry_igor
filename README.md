@@ -74,7 +74,7 @@ To generate a Nyquist plot, we need to determine the real and imaginary part of 
 With the obtained impedance data it is possible to find the representative equivalent circuit for your system. To do this, you need to make a suggestion for an equivalent circuit first.
 Often, a system studied by impedance spectroscopy in the double layer region can be described using the equivalent circuit shown in Figure 4.
 
-![Equivalent Circuit](/assets/img/equivalent_circuit.svg)
+![Equivalent Circuit](/assets/img/equivalent_circuit.pdf)
 ##### Figure 4: An equivalent circuit consisting of a ohmic resistor R_el with a parallel connection of a capacitive resistor Z_dl and an ohmic resistor R_T.
 
 

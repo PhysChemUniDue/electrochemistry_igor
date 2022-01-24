@@ -70,3 +70,25 @@ To generate a Nyquist plot, we need to determine the real and imaginary part of 
 
 ![Niquist Plot](/assets/img/niquist.svg)
 ##### Figure 3: Niquist Plot
+
+With the obtained impedance data it is possible to find the representative equivalent circuit for your system. To do this, you need to make a suggestion for an equivalent circuit first.
+Often, a system studied by impedance spectroscopy in the double layer region can be described using the following equivalent circuit in Figure 4.
+
+
+##### Figure 4: An equivalent circuit consisting of a ohmic resistor R_el with a parallel connection of a capacitive resistor Z_dl and an ohmic resistor R_T.
+
+
+
+R_el describes the electrolyte resistance, R_T the contact resistance and Z_DL the capacitive resistance of the double layer.
+
+Now the resistances can be summed according to Kirchoff's law and Ohm's law. This gives the following equation for the absolute value of the impedance:
+
+The equation obtained can now be used to fit the impedance data in Figure 2. The fitting of the data is shown in Figure 5.
+
+Translated with www.DeepL.com/Translator (free version)
+
+
+To be sure that the electrode has not changed during the experiment it is advisable to record a Cyclovoltammogram before and after the impedance spectroscopy measurements.
+These can be seen in figure 6. 
+
+##### Figure 6: Cyclovoltammogram before and after the impedance spectroscopy measurements.

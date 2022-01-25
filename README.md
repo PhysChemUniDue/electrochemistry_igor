@@ -99,10 +99,3 @@ This equation is used to fit the impedance data which is shown in Figure 5.
 
 ![Bode Plot Fit](/assets/img/bode_fit.svg)
 ##### Figure 5: Bode Plot Fit.
-
-
-To be sure that the electrode has not changed during the experiment it is advisable to record a Cyclovoltammogram before and after the impedance spectroscopy measurements.
-These can be seen in figure 6. 
-
-![CVs](/assets/img/cvs.svg)
-##### Figure 6: Cyclovoltammogram before and after the impedance spectroscopy measurements.

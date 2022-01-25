@@ -40,11 +40,12 @@ All the parameters which have been set for each measurement (e.g. applied freque
 
 # Data Analysis
 
-The raw data at frequency f = 1 kHz are shown in figure 1. The potential wave is shown in blue and the current wave in red. These data are fitted with the following equation:
+The raw data recorded at 1 kHz are shown in figure 1. 
 
 ![m_3 data](/assets/img/m_3.svg)
-##### Figure 1: Applied AC potential and resulting current vs time with there respective sine regressions.
+##### Figure 1: Applied AC potential (in blue) and resulting current (in red) vs time with the respective sine regressions.
 
+The potential wave is shown in blue and the current wave in red. These data are fitted with the following equation:
 
 <!-- $f(x) = A \cdot \sin(\omega t + \phi) + y_0$ --> <img style="transform: translateY(0.1em); background: white;" src="svg/52ru0PjanC.svg">
 
@@ -61,7 +62,7 @@ The phase difference is calculated by subtracting the phase of the current *&phi
 ![Bode Plot](/assets/img/bode.svg)
 ##### Figure 2: Bode Plot
 
-To generate a Nyquist plot, we need to determine the real and imaginary part of the impedance. These values are calculated by the following equations:
+To generate a Nyquist plot, the real and imaginary part of the impedance need to be determined. These values are calculated by the following equations:
 
 <!-- $Z_{Re} = \left| Z \cos \left( \frac{\pi}{180}\phi_{difference} \right) \right|$ --> <img style="transform: translateY(0.1em); background: white;" src="https://render.githubusercontent.com/render/math?math=Z_%7BRe%7D%20%3D%20%5Cleft%7C%20Z%20%5Ccos%20%5Cleft(%20%5Cfrac%7B%5Cpi%7D%7B180%7D%5Cphi_%7Bdifference%7D%20%5Cright)%20%5Cright%7C">
 
@@ -71,7 +72,7 @@ To generate a Nyquist plot, we need to determine the real and imaginary part of 
 ![Niquist Plot](/assets/img/niquist.svg)
 ##### Figure 3: Niquist Plot
 
-With the obtained impedance data it is possible to find the representative equivalent circuit for your system. To do this, you need to make a suggestion for an equivalent circuit first.
+With the obtained impedance data it is possible to find a representative equivalent circuit for the studied system. To do this, you need to make a suggestion for an equivalent circuit first.
 Often, a system studied by impedance spectroscopy in the double layer region can be described using the equivalent circuit shown in Figure 4.
 
 ![Equivalent Circuit](/assets/img/equivalent_circuit.jpg)
@@ -79,7 +80,7 @@ Often, a system studied by impedance spectroscopy in the double layer region can
 
 
 
-Z<sub>el</sub> describes the electrolyte resistance, Z<sub>T</sub> the transfer resistance, they both are simple ohmic resistors not depending on the input frequency f . Z<sub>dl</sub> is the capacitive resistance of the double layer and is dependent on the input frequency f.
+The electrolyte resistance, Z<sub>el</sub>, and the transfer resistance, Z<sub>T</sub>, are simple ohmic resistors which do not depend on the input frequency f. Z<sub>dl</sub> is the capacitive resistance of the double layer and is dependent on the input frequency f.
 
 <!-- $$
 Z_{dl} = \frac{1}{i 2\pi f C_{dl}}
@@ -87,14 +88,14 @@ $$ -->
 
 <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=Z_%7Bdl%7D%20%3D%20%5Cfrac%7B1%7D%7Bi%202%5Cpi%20f%20C_%7Bdl%7D%7D%0D"></div>
 
-Now the resistances can be summed according to Kirchoff's law and Ohm's law. This gives the following equation for the absolute value of the impedance:
+Now the resistances can be summed up according to Kirchoff's and Ohm's law. This results in the following equation for the absolute value of the impedance:
 
 <!-- $$
 |Z(f)| = \sqrt{\left ( R_{el} \frac{1}{R_T \left ( \frac{1}{R_T^2}+4\pi^2f^2 C_{dl}^2\right )}\right )^2 + \frac{4\pi^2f^2 C_{dl}^2}{ \left ( \frac{1}{R_T^2}+4\pi^2f^2 C_{dl}^2\right )^2}}
 $$ --> 
 <div align="center"><img style="background: white;" src="https://render.githubusercontent.com/render/math?math=%7CZ(f)%7C%20%3D%20%5Csqrt%7B%5Cleft%20(%20R_%7Bel%7D%20%5Cfrac%7B1%7D%7BR_T%20%5Cleft%20(%20%5Cfrac%7B1%7D%7BR_T%5E2%7D%2B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%5Cright%20)%7D%5Cright%20)%5E2%20%2B%20%5Cfrac%7B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%7D%7B%20%5Cleft%20(%20%5Cfrac%7B1%7D%7BR_T%5E2%7D%2B4%5Cpi%5E2f%5E2%20C_%7Bdl%7D%5E2%5Cright%20)%5E2%7D%7D%0D"></div>
 
-The equation obtained can now be used to fit the impedance data in Figure 2. The fitting of the data is shown in Figure 5.
+This equation is used to fit the impedance data which is shown in Figure 5.
 
 ![Bode Plot Fit](/assets/img/bode_fit.svg)
 ##### Figure 5: Bode Plot Fit.

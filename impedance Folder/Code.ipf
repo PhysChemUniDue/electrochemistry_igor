@@ -339,3 +339,100 @@ ErrorBars impedance_imag_wave XY,wave=(impedance_real_error_wave,impedance_real_
 Setdatafolder "root:"
 
 end
+
+
+// w is the intial guess wave for the fitting parameters Rel,Rt,Cdl
+Function bode_fit(w,f) : FitFunc
+	Wave w
+	Variable f
+
+	//CurveFitDialog/ These comments were created by the Curve Fitting dialog. Altering them will
+	//CurveFitDialog/ make the function less convenient to work with in the Curve Fitting dialog.
+	//CurveFitDialog/ Equation:
+	//CurveFitDialog/ f(f) = sqrt((Rel + 1/(Rt*(1/Rt^2 + 4*Pi^2*f^2*Cdl^2)))^2 + 4*Pi^2*f^2*Cdl^2/(1/Rt^2 + 4*Pi^2*f^2*Cdl^2)^2)
+	//CurveFitDialog/ End of Equation
+	//CurveFitDialog/ Independent Variables 1
+	//CurveFitDialog/ f
+	//CurveFitDialog/ Coefficients 3
+	//CurveFitDialog/ w[0] = Rel
+	//CurveFitDialog/ w[1] = Rt
+	//CurveFitDialog/ w[2] = Cdl
+
+	return sqrt((w[0] + 1/(w[1]*(1/w[1]^2 + 4*Pi^2*f^2*w[2]^2)))^2 + 4*Pi^2*f^2*w[2]^2/(1/w[1]^2 + 4*Pi^2*f^2*w[2]^2)^2)
+End
+
+
+function plot_cv(measurement_number)
+variable measurement_number
+string directory_name
+directory_name = "root:m_" + num2str(measurement_number)
+print "Ich arbeite in " + directory_name
+SetDataFolder directory_name
+wave current,potential
+Display  /K=1 potential 
+ModifyGraph tick=2,mirror=2,fStyle=1,fSize=10,prescaleExp(left)=0,btLen=3;DelayUpdate
+ModifyGraph width=226.772,height=170.079,expand=1.5
+ShowInfo
+Label bottom "Time [s]"
+Label left "Potential [V]"
+ModifyGraph axRGB(left)=(0,15872,65280),tlblRGB(left)=(0,15872,65280)
+ModifyGraph alblRGB(left)=(0,15872,65280)
+ModifyGraph rgb=(0,15872,65280)
+AppendToGraph/R current
+Label right " Current [A]"
+ModifyGraph tick=2,fStyle=1,fSize=10,font(right)="Arial",axRGB(right)=(65280,0,0)
+ModifyGraph tlblRGB(right)=(65280,0,0),alblRGB(right)=(65280,0,0);DelayUpdate
+Label right " Current [\\UA]"
+ShowInfo
+Display /k=1  current vs potential as directory_name
+ModifyGraph tick=2,mirror=2,fStyle=1,fSize=10,prescaleExp(left)=6,btLen=3;DelayUpdate
+ModifyGraph width=226.772,height=170.079,expand=1.5
+ShowInfo
+Label bottom "Potential [V]"
+Label left "Current [\\UA]"
+ModifyGraph rgb=(0,0,0)
+ModifyGraph zero(left)=1
+end
+
+
+
+
+
+function plot_smooth_cv(measurement_number,smoothing_grade)
+variable measurement_number,smoothing_grade
+string directory_name
+directory_name = "root:m_" + num2str(measurement_number)
+print "Ich arbeite in " + directory_name
+SetDataFolder directory_name
+wave current,potential
+
+Duplicate/O potential,potential_smth
+Smooth smoothing_grade, potential_smth
+
+Duplicate/O current,current_smth
+Smooth smoothing_grade, current_smth
+
+Display  /K=1 potential_smth
+ModifyGraph tick=2,mirror=2,fStyle=1,fSize=10,prescaleExp(left)=0,btLen=3
+ModifyGraph width=226.772,height=170.079,expand=1.5
+ShowInfo
+Label bottom "Time [s]"
+Label left "Potential [V]"
+ModifyGraph axRGB(left)=(0,15872,65280),tlblRGB(left)=(0,15872,65280)
+ModifyGraph alblRGB(left)=(0,15872,65280)
+ModifyGraph rgb=(0,15872,65280)
+AppendToGraph/R current
+Label right " Current [A]"
+ModifyGraph tick=2,fStyle=1,fSize=10,font(right)="Arial",axRGB(right)=(65280,0,0)
+ModifyGraph tlblRGB(right)=(65280,0,0),alblRGB(right)=(65280,0,0)
+Label right " Current [\\UA]"
+string display_title = directory_name + " smoothed " + num2str(smoothing_grade)
+Display /K=1  current_smth vs potential_smth as display_title
+ModifyGraph tick=2,mirror=2,fStyle=1,fSize=10,prescaleExp(left)=6,btLen=3
+ModifyGraph width=226.772,height=170.079,expand=1.5
+ShowInfo
+Label bottom "Potential_smth [V]"
+Label left "Current_smth [\\UA]"
+ModifyGraph rgb=(0,0,0)
+ModifyGraph zero(left)=1
+end

@@ -9,7 +9,7 @@ The first section deals with the experimental setup while the second one will be
 
 # Methods
 
-## Equipement
+## Equipment
 
 Potentiostat: 
 

@@ -22,7 +22,7 @@ Electrochemical impedance spectroscopy measures the frequency response of a part
 All the parameters which have been set for each measurement (e.g. applied frequency, potential amplitude, etc.) are listed in the following table. The lower frequencies from 30 mHz and lower were not recorded with an oscilloscope, but with a data logger. Therefore, the time in Table 1 was adjusted.
 
 ##### Table 1: Applied parameters for all impedance measurements.
-| index | frequency [Hz]| amplitude [mV]| resistance [&Omega;]| datapoints | time [s] | smoothing cap. | osc/log
+| index | frequency [Hz]| amplitude [mV]| amplification [&Omega;]| datapoints | time [s] | smoothing cap. | osc/log
 |-------|-----------|-----------|------------|------------|-------|----------------|-----|
 | 1     | 10000     | 80        | 10         | 100  | 0.0002    | no             | osc.
 | 2     | 3000      | 50        | 10         | 500  | 0.0005    | no             | osc.
